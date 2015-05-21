@@ -2,7 +2,7 @@ package lab1;
 
 /**
  * A representation of a book.
- * @author <a href="mailto:rkhatchadourian@citytech.cuny.edu">Raffi Khatchadourian</a>.
+ * @Evan Chin
  */
 public class Book {
 
@@ -22,6 +22,8 @@ public class Book {
      */
     public Book(String bookTitle) {
         // TODO: Implement this method
+        title = bookTitle;
+        
     }
    
     /** 
@@ -29,6 +31,7 @@ public class Book {
      */
     public void rented() {
         // TODO: Implement this method
+       borrowed = true;
     }
    
     /**
@@ -36,6 +39,7 @@ public class Book {
      */
     public void returned() {
         // TODO: Implement this method
+        borrowed = false;
     }
    
     /**
@@ -43,7 +47,9 @@ public class Book {
      * @return true if this book is rented and false otherwise.
      */
     public boolean isBorrowed() {
+        return borrowed;
         // TODO: Implement this method
+        
     }
    
     /** 
@@ -51,6 +57,7 @@ public class Book {
      * @return This book's title as a String.
      */
     public String getTitle() {
+        return title;
         // TODO: Implement this method
     }
 
